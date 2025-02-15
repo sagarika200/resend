@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.blueShadow {
+    box-shadow: 0px 14px 55px rgb(0, 0, 0);
+}
+
+.specialSpin {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.blur-load {
+    background-size: cover;
+    background-position: center;
+}
+
+.img {
+    object-position: center;
+    object-fit: cover;
+}
+#intro {
+    background-color: #20222700; /* Dark background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 20px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from the text */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    display: inline-block; /* Keeps the element inline */
+    font-family: Arial, sans-serif; /* Font style */
+    font-size: 16px; /* Font size */
+}
+
+#intro:hover {
+    background-color: #21282e; /* Slightly darker on hover */
+}
+
+#intro:active {
+    background-color: #1C2833; /* Even darker on click */
+}
+#line{
+        width: 50%;
+        margin: 20px auto;
+        border-top: 1px solid #ccc;
+    }
+    .gridtest {
+        font-family: Arial, sans-serif;
+        background-color: #000; /* Matching the background color */
+        color: #fff;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+  
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        max-width: 800px;
+        width: 100%;
+      }
+  
+      .grid-item {
+        background-color: #111; /* Slightly lighter than the background */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      }
+  
+      .grid-item h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+  
+      .grid-item p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+  
+      .learn-more {
+        color: #1e90ff; /* Blue color for the learn more link */
+        text-decoration: none;
+        font-weight: bold;
+      }
+  
+      .learn-more:hover {
+        text-decoration: underline;
+      }
